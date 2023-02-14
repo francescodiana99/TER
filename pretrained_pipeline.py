@@ -51,28 +51,6 @@ TRAINING_DATA = []
 for text, ann in train_data:
     TRAINING_DATA.append((text, {"entities": ann}))
 
-# #%%
-# examples = []
-# for text, ann in TRAINING_DATA:
-#     examples.append(Example.from_dict(nlp.make_doc(text), ann))
-
-
-# ner = nlp.add_pipe("ner")
-# ner.add_label("DRUG")
-# ner.add_label("NLD")
-# ner.add_label("ADR")
-
-# print(ner.labels)
-# #%%
-
-
-# optimizer = nlp.create_optimizer()
-# losses = ner.update(examples)
-#%%
-
-
-
-# TRAINING_DATA = [("Example text with entity", {"entities": [(0, 14, "ENTITY")]})]
 
 # RIPRENDI DA QUA, DA VERIFICARE SE FUNZIONA, INOLTRE RICONTROLLA SE EFFETIVAMENTE
 # I TAG SONO FATTI BENE PERCHè QUESTO POTREBBE CAMBIARE TUTTO
@@ -100,7 +78,7 @@ def train_spacy(data, iterations,nlp):
     # get other pipe components to disable during training
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe != 'ner']
     with nlp.disable_pipes(*other_pipes):
-        optimizer = nlp.begin_training()
+        optimizer = nlp.initialize()
         for itr in range(iterations):
             print("Starting Iteration: " + str(itr))
             random.shuffle(TRAINING_DATA)
@@ -109,14 +87,14 @@ def train_spacy(data, iterations,nlp):
             for text, ann in TRAINING_DATA:
                 example.append(Example.from_dict(nlp.make_doc(text), ann))
 
-            nlp.update(example, drop=0.2, sgd=optimizer, losses=losses)
+            nlp.update(example, drop=0.2,  losses=losses)
             print(losses)
 
     return nlp
 
 
 
-start_training = train_spacy(TRAINING_DATA, 100, nlp )
+start_training = train_spacy(TRAINING_DATA, 20, nlp )
 # %%
 print(nlp.pipe_names)
 nlp.to_disk('./custom_pipeline')
@@ -127,3 +105,5 @@ options = {"colors": colors}
 
 spacy.displacy.render(test, style="ent", options= options, jupyter=True)
 print(nlp.pipe_names)
+print(nlp.pipe_labels)
+# %%
