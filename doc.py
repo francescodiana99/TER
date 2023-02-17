@@ -24,19 +24,19 @@ def get_drugs(p):
         # I do not get why r is different from p.runs[0]
         if p.runs[0].text == r.text:
             prev = r
-            if r.font.highlight_color == 3:
+            if r.font.highlight_color == 3 or r.font.highlight_color == 5 :
                 drug.append(r.text)
         else:
             # here I check if the run is a part of a longer expression, checking if the color of the highlight is the same of the previous run
-            if (r.font.highlight_color == 3 and prev.font.highlight_color == 3):
+            if ((r.font.highlight_color == 3 and prev.font.highlight_color == 3) or (r.font.highlight_color == 5 and prev.font.highlight_color == 5)):
                 # if the condition is true, I append the text because it is part of the same expression
                 drug[-1] = drug[-1] + r.text
-            elif r.font.highlight_color == 3:
+            elif r.font.highlight_color == 3 or r.font.highlight_color == 5 :
                 drug.append(r.text)
                 # check if the element is the last one
             elif r.text == " " and p.runs[idx] != p.runs[-1]:
-                # in case it is a space between two highlighted elements we added it to the list
-                if p.runs[idx - 1].font.highlight_color == 3 and p.runs[idx + 1].font.highlight_color == 3:
+                # in case it is a space between two highlighted elements we add it to the list
+                if (p.runs[idx - 1].font.highlight_color == 3 and p.runs[idx + 1].font.highlight_color == 3) or (p.runs[idx - 1].font.highlight_color == 5 and p.runs[idx + 1].font.highlight_color == 5):
                     drug.append(r.text)
             prev = r
     # now if there is a space in the list, we merge the text
@@ -46,7 +46,7 @@ def get_drugs(p):
             del drug[idx]
             del drug[idx]
 
-    # now we create the tuples
+    # we create the tuples
     """to avoid issues with possible duplicates in the same paragraph, the idea is to extract
     the position of an annotation and then to cut the string to that index, avoiding that find() gives as
     result always the first occurrence of an entity"""
@@ -205,4 +205,14 @@ def preprocessing(doc):
     training_data = [ (text,ann) for (text,ann) in training_data if ann != [] ]
     return training_data
 
+#-------------TEST------------
 
+if __name__ == "__main__":
+    import docx
+    from docx import Document
+    document = docx.Document("./data/debug.docx")
+    for p in document.paragraphs:
+        drugs = get_drugs(p)
+        adr = get_adr(p)
+        sym = get_sym(p)
+        print(drugs)

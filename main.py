@@ -6,9 +6,7 @@ from doc import *
 import random
 import spacy
 from spacy.tokens import DocBin
-from spacy.scorer import Scorer
-from spacy.training.example import Example
-import re
+
 
 
 
@@ -16,7 +14,7 @@ document = docx.Document("./data/train1.docx")
 document_2 = docx.Document("./data/train2.docx")
 
 
-random.seed(3)
+random.seed(22)
 
 remove_empty_paragraphs(doc=document)
 remove_empty_paragraphs(doc=document_2)
@@ -45,58 +43,57 @@ train_index = round(len(data)*0.8)
 train_data = data[:train_index]
 eval_data = data[:train_index]
 
-#%%
 
+def DocBin_to_disk(data:list, path:str):
+    """create a DocBin object from a list of annotations and saves it on disk"""
 
-# I check the number of annotation for each label
-NLD = 0
-DRUG = 0
-ADR = 0
-for _, annot in data:
-    nld = re.findall("NLD")
-    drug = re.findall("DRUG")
-    re.findall("ADR")
-    NLD = NLD + len(nld)
-    DRUG = DRUG + len(drug)
-    ADR = ADR + len("ADR")
+    db = DocBin()
+    nlp = spacy.blank("fr")
+    for text, annotations in data:
+        doc = nlp(text)
+        ents = []
+        for start, end, label in annotations:
+            # can't correctly select Amoxicilline (7th example)
+            span = doc.char_span(start, end, label=label)
+            #print(span)
+            ents.append(span)
 
-print(NLD)
-print(DRUG)
-print(ADR)
-
-
-
+        doc.ents = ents
+        db.add(doc)
+    db.to_disk(path)
 
 #%%
 # ================================== DOCBIN CREATION =================================================
+DocBin_to_disk(train_data,"./train_2.spacy")
+DocBin_to_disk(eval_data, "./eval_2.spacy")
 
-db = DocBin()
-nlp = spacy.blank("fr")
-for text, annotations in train_data:
-    doc = nlp(text)
-    ents = []
-    for start, end, label in annotations:
-        # can't correctly select Amoxicilline (7th example)
-        span = doc.char_span(start, end, label=label)
-        #print(span)
-        ents.append(span)
+# db = DocBin()
+# nlp = spacy.blank("fr")
+# for text, annotations in train_data:
+#     doc = nlp(text)
+#     ents = []
+#     for start, end, label in annotations:
+#         # can't correctly select Amoxicilline (7th example)
+#         span = doc.char_span(start, end, label=label)
+#         #print(span)
+#         ents.append(span)
 
-    doc.ents = ents
-    db.add(doc)
-db.to_disk("./train.spacy")
+#     doc.ents = ents
+#     db.add(doc)
+# db.to_disk("./train_2.spacy")
 
-for text, annotations in eval_data:
-    doc = nlp(text)
-    ents = []
-    for start, end, label in annotations:
-        # can't correctly select Amoxicilline (7th example)
-        span = doc.char_span(start, end, label=label)
-        #print(span)
-        ents.append(span)
+# for text, annotations in eval_data:
+#     doc = nlp(text)
+#     ents = []
+#     for start, end, label in annotations:
+#         # can't correctly select Amoxicilline (7th example)
+#         span = doc.char_span(start, end, label=label)
+#         #print(span)
+#         ents.append(span)
 
-    doc.ents = ents
-    db.add(doc)
-db.to_disk("./eval.spacy")
+#     doc.ents = ents
+#     db.add(doc)
+# db.to_disk("./eval.spacy")
 
 
 
@@ -106,19 +103,19 @@ db.to_disk("./eval.spacy")
 
 #nlp = spacy.blank("fr")
 # this should be ran after runnin python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./eval.spacy --gpu-id 0
-nlp_ner = spacy.load("./models/model-best")
+nlp_ner = spacy.load("./models/model_2/model-best")
 
 # adding dictionary to the pipeline
 patterns = srsly.read_jsonl("pattern.jsonl")
-ruler = nlp_ner.add_pipe("span_ruler", first=True)
+ruler = nlp_ner.add_pipe("span_ruler", before='ner')
 ruler.add_patterns(patterns)
-
+nlp_ner.to_disk("./models/pipeline_2")
 #%%
-print(nlp_ner._components)
-# %%
+print(nlp_ner.pipe_names)
 
+# %%
 # ======================= TEST ========================================
-test = nlp_ner("Patiente initialement admise à la clinique pour un épisode dépressif sévère. L'évolution s'est montrée peu favorable lors de cette hospitalisation. La patiente est donc transférée dans le service. La patiente s'est rapidement dégradée sur le plan somatique avec hyperthermie et signes neurologiques, notamment suite à un surdosage en augmentin ayant entraîné une insuffisance rénale aigue sur son insuffisance rénale chronique. Dans ce contexte, la patiente est transférée en service. Hospitalisée du 10/06/2021 au 23/06/2021 pour prise en charge de troubles de la vigilance fébriles. ")
+test = nlp_ner("11)	Avant son épisode de sclérite, le patient a bénéficié de quelques cures de cortisone, puis d’AINS et depuis l’émergence de la sclérite antérieure de l’œil gauche, introduction d’une corticothérapie à 50 mg avec régression de 10 mg toutes les semaines.")
 colors = {"DRUG": "#F67DE3", "ADR": "#7DF6D9", "NLD":"#FFFFFF"}
 options = {"colors": colors}
 

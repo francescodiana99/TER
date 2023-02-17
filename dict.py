@@ -19,39 +19,39 @@ df_spécialités = pd.read_excel("./dictionaries/databases.xlsx", sheet_name="Li
 pattern = open("pattern.jsonl","w")
 
 # add SOC to dictionary
-SOC = df_SOC["soc_name_fr"].to_list()
-for i in SOC:
-    line = {"label": "NLD","pattern": i }
-    json.dump(line, pattern)
-    pattern.write("\n")
+# SOC = df_SOC["soc_name_fr"].to_list()
+# for i in SOC:
+#     line = {"label": "NLD","pattern": i }
+#     json.dump(line, pattern)
+#     pattern.write("\n")
 
-# add HGLT to dictionary
-HLGT = df_HLGT["hlgt_name_fr"].to_list()
-for i in HLGT:
-    line = {"label": "NLD","pattern": i }
-    json.dump(line, pattern)
-    pattern.write("\n")
+# # add HGLT to dictionary
+# HLGT = df_HLGT["hlgt_name_fr"].to_list()
+# for i in HLGT:
+#     line = {"label": "NLD","pattern": i }
+#     json.dump(line, pattern)
+#     pattern.write("\n")
 
-# add HLT to dictionary
-HLT = df_HLT["hlt_name_fr"].to_list()
-for i in HLT:
-    line = {"label": "NLD","pattern": i }
-    json.dump(line, pattern)
-    pattern.write("\n")
+# # add HLT to dictionary
+# HLT = df_HLT["hlt_name_fr"].to_list()
+# for i in HLT:
+#     line = {"label": "NLD","pattern": i }
+#     json.dump(line, pattern)
+#     pattern.write("\n")
 
-# add PT to dictionary
-PT = df_PT["pt_name_fr"].to_list()
-for i in PT:
-    line = {"label": "NLD","pattern": i }
-    json.dump(line, pattern)
-    pattern.write("\n")
+# # add PT to dictionary
+# PT = df_PT["pt_name_fr"].to_list()
+# for i in PT:
+#     line = {"label": "NLD","pattern": i }
+#     json.dump(line, pattern)
+#     pattern.write("\n")
 
-# add LLT to dictionary
-LLT = df_LLT["llt_name_fr"].to_list()
-for i in SOC:
-    line = {"label": "NLD","pattern": i }
-    json.dump(line, pattern)
-    pattern.write("\n")
+# # add LLT to dictionary
+# LLT = df_LLT["llt_name_fr"].to_list()
+# for i in SOC:
+#     line = {"label": "NLD","pattern": i }
+#     json.dump(line, pattern)
+#     pattern.write("\n")
 
 
 # add compositions to dictionary
@@ -80,7 +80,7 @@ for i in generiques:
     # extract only the words in uppercase letter, which are the name of our interest
     regex = re.compile(r'[A-ZÀ-ÖØ-Þ]+')
     words = regex.findall(i)
-    line = {"label": "DRUG", "pattern": [{"LOWER": j}for j in i.split()]}
+    line = {"label": "DRUG", "pattern": [{"LOWER": j}for j in words]}
     json.dump(line, pattern)
     pattern.write("\n")
 
@@ -92,10 +92,13 @@ print(df_spécialités.shape)
 
 spécialités = df_spécialités.iloc[:,0].to_list()
 for i in spécialités:
+    #separate elements with/
+
     # extract only the words in uppercase letter, which are the name of our interest
     regex = re.compile(r'[A-ZÀ-ÖØ-Þ]+')
     words = regex.findall(i)
-    line = {"label": "DRUG", "pattern": [{"LOWER": j}for j in i.split()]}
+
+    line = {"label": "DRUG", "pattern": [{"LOWER": j}for j in words]}
     json.dump(line, pattern)
     pattern.write("\n")
 
