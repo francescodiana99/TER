@@ -1,0 +1,28 @@
+method: bayes
+metric:
+  goal: maximize
+  name: ents_f
+command:
+  - 'C:\Users\franc\Desktop\uni\secondo anno\progetto\code\test\Scripts\python.exe'
+  - './sweeps_using_config.py'
+  - ./configs/config_3.cfg
+  - ./models/model_16
+
+parameters:
+  training.dropout:
+    distribution: uniform
+    max: 0.5
+    min: 0.15
+  training.optimizer.beta1:
+    distribution: uniform
+    max: 0.95
+    min: 0.3
+  training.optimizer.beta2:
+    distribution: uniform
+    max: 0.9999
+    min: 0.3
+
+
+
+
+
