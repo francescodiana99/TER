@@ -29,7 +29,11 @@ Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set 
 [doc.py](doc.py) contains methods to extract annotations from docx files.
 ## Additional notes
 To correctly run the code, some paths may need to be changed, therefore check them before running a file.
-
+In case of hyperparameter tuning using WandB, uncomment lines in training.logger block in config file and comment the following lines in the same block:
+```
+@loggers = "spacy.ConsoleLogger.v1"
+progress_bar = true
+```
 
 
 
