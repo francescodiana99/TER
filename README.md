@@ -28,7 +28,7 @@ Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set 
 [pdf_extraction.py](pdf_extraction.py) contains code to extract text from pdf file. Extracted text is already available in [data/test.txt](data/test.txt)<br/>
 [doc.py](doc.py) contains methods to extract annotations from docx files.
 ## Additional notes
-To correctly run the code, some paths may need to be changed, therefore check them before running a file.
+To correctly run the code, some paths may need to be changed, therefore check them before running a file.<br/>
 In case of hyperparameter tuning using WandB, uncomment lines in training.logger block in config file and comment the following lines in the same block:
 ```
 @loggers = "spacy.ConsoleLogger.v1"
