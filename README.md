@@ -14,7 +14,7 @@ Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set 
 
 ## Project structure
 [cross_validation.py](cross_validation.py) and [cross_validation_alt.py](cross_validation_alt.py) run a cross-validation process followed by an evaluation process respectively on pipelines able to label DRUG and SYM and DRUG, ADR and NLD.<br/>
-[Metrics.py](Metrics.py) contains a list of functions to evaluate the model. To test a pipeline it is possible to launch it changing the path in the code, otherwise it is possible to use:
+[metrics.py](metrics.py) contains a list of functions to evaluate the model. To test a pipeline it is possible to launch it changing the path in the code, otherwise it is possible to use:
 ```
  python -m spacy benchmark accuracy model_path test_data_path --gpu-id 0
 ```
