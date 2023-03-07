@@ -25,6 +25,7 @@ Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set 
 [sweeps_using_config.py](sweeps_using_config.py) allows merging spaCy config file and WandB yaml file.<br/>
 [my_sweep.yml](my_sweep.yml) and [my_sweep_2.yml](my_sweep_2.yml) contain two possible configuration to run hyperparameter tuning using wandb.<br/>
 [pdf_extraction.py](pdf_extraction.py) contains code to extract text from pdf file. Extracted text is already available in [data/test.txt](data/test.txt)<br/>
+[doc.py](doc.py) contains methods to extract annotations from docx files.
 ## Additional notes
 To correctly run the code, some paths may need to be changed, therefore check them before running a file.
 
