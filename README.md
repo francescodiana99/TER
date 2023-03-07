@@ -21,6 +21,7 @@ Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set 
 [data](data) contains train and test data.<br/>
 [cv](cv) and [cv_alt](cv_alt) contain data folds created for the cross-validation process, specifically for models able to label DRUG and SYM and DRUG, ADR and NLD.<br/>
 [configs](configs) contains spaCy config files, specifically [config_3.cfg](configs/config_3.cfg) for the pipeline which labels DRUG, ADR and NLD, and [config_4.cfg](configs/config_4.cfg) for the one which labels DRUG and SYM.<br/>
+[dictionaries](dictionaries) containes dictionaries used to create Entity Ruler patterns
 [dict.py](dict.py) generate a pattern file containing patterns for the Entity Ruler component. Not that pattern files are already provided: [pattern.jsonl](pattern.jsonl) contains DRUG patterns, while [pattern_2.jsonl](pattern_2.jsonl) contains DRUG and SYM patterns. <br/>
 [sweeps_using_config.py](sweeps_using_config.py) allows merging spaCy config file and WandB yaml file.<br/>
 [my_sweep.yml](my_sweep.yml) and [my_sweep_2.yml](my_sweep_2.yml) contain two possible configuration to run hyperparameter tuning using wandb.<br/>
