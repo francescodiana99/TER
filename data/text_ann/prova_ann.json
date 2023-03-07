@@ -1,0 +1,210 @@
+{
+    "0": {
+        "from": 52,
+        "to": 68,
+        "text": "ÉPISODE DÉPRESSIF",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MDRFRE/10012402"
+        ],
+        "cui": [
+            "C0349217"
+        ],
+        "semantic_groups": [
+            "DISO"
+        ],
+        "semanticType": [
+            "T048"
+        ]
+    },
+    "1": {
+        "from": 132,
+        "to": 146,
+        "text": "HOSPITALISATION",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MDRFRE/10074101",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10054112",
+            "http://purl.lirmm.fr/ontology/MSHFRE/D006760"
+        ],
+        "cui": [
+            "C0019993"
+        ],
+        "semantic_groups": [
+            "PROC"
+        ],
+        "semanticType": [
+            "T058"
+        ]
+    },
+    "2": {
+        "from": 243,
+        "to": 246,
+        "text": "PLAN",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MSHFRE/D019532"
+        ],
+        "cui": [
+            "C0024779"
+        ],
+        "semantic_groups": [
+            "CONC"
+        ],
+        "semanticType": [
+            "T170"
+        ]
+    },
+    "3": {
+        "from": 263,
+        "to": 274,
+        "text": "HYPERTHERMIE",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MSHFRE/D005334",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10020843"
+        ],
+        "cui": [
+            "C0015967"
+        ],
+        "semantic_groups": [
+            "DISO"
+        ],
+        "semanticType": [
+            "T184"
+        ]
+    },
+    "4": {
+        "from": 279,
+        "to": 298,
+        "text": "SIGNES NEUROLOGIQUES",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MSHFRE/D009461"
+        ],
+        "cui": [
+            "C0746857",
+            "C0027854",
+            "C0751377",
+            "C0235031",
+            "C0422837",
+            "C0751378",
+            "C0521654"
+        ],
+        "semantic_groups": [
+            "DISO"
+        ],
+        "semanticType": [
+            "T033",
+            "T184"
+        ]
+    },
+    "5": {
+        "from": 322,
+        "to": 330,
+        "text": "SURDOSAGE",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MDRFRE/10033295",
+            "http://chu-rouen.fr/cismef/WHO-ART#0874_IT0"
+        ],
+        "cui": [
+            "C0235823",
+            "C0029944",
+            "C0235822"
+        ],
+        "semantic_groups": [
+            "DISO"
+        ],
+        "semanticType": [
+            "T033",
+            "T037"
+        ]
+    },
+    "6": {
+        "from": 335,
+        "to": 343,
+        "text": "AUGMENTIN",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MSHFRE/D019980"
+        ],
+        "cui": [
+            "C0729068",
+            "C0729071",
+            "C0729069",
+            "C0054066",
+            "C0591132",
+            "C0729072"
+        ],
+        "semantic_groups": [
+            "CHEM"
+        ],
+        "semanticType": [
+            "T195",
+            "T121",
+            "T109"
+        ]
+    },
+    "7": {
+        "from": 364,
+        "to": 382,
+        "text": "INSUFFISANCE RÉNALE",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MDRFRE/10038435",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10023418",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10022467",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10038474",
+            "http://purl.lirmm.fr/ontology/MSHFRE/D051437"
+        ],
+        "cui": [
+            "C1565489",
+            "C0035078"
+        ],
+        "semantic_groups": [
+            "DISO"
+        ],
+        "semanticType": [
+            "T047"
+        ]
+    },
+    "8": {
+        "from": 398,
+        "to": 426,
+        "text": "INSUFFISANCE RÉNALE CHRONIQUE",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MDRFRE/10009119",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10064848",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10050441",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10023420",
+            "http://chu-rouen.fr/cismef/WHO-ART#0406_IT0",
+            "http://purl.lirmm.fr/ontology/MDRFRE/10038444",
+            "http://purl.lirmm.fr/ontology/MSHFRE/D051436"
+        ],
+        "cui": [
+            "C0235446",
+            "C0041948",
+            "C0549281",
+            "C0403447",
+            "C0022661",
+            "C1561643",
+            "C0302810"
+        ],
+        "semantic_groups": [
+            "DISO"
+        ],
+        "semanticType": [
+            "T047"
+        ]
+    },
+    "9": {
+        "from": 566,
+        "to": 574,
+        "text": "VIGILANCE",
+        "id": [
+            "http://purl.lirmm.fr/ontology/MSHFRE/D014851"
+        ],
+        "cui": [
+            "C0043012"
+        ],
+        "semantic_groups": [
+            "PHYS"
+        ],
+        "semanticType": [
+            "T041"
+        ]
+    }
+}

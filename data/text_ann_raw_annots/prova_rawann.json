@@ -1,0 +1,769 @@
+[
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0349217"
+            ],
+            "semanticType": [
+                "T048"
+            ],
+            "prefLabel": "Épisode dépressif",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10012402",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 52,
+                "to": 68,
+                "matchType": "PREF",
+                "text": "ÉPISODE DÉPRESSIF"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "prefLabel": "sévère",
+            "@id": "http://id.who.int/icd/entity/1201187093",
+            "@type": "http://www.w3.org/2002/07/owl#Class"
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 70,
+                "to": 75,
+                "matchType": "PREF",
+                "text": "SÉVÈRE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0019993"
+            ],
+            "semanticType": [
+                "T058"
+            ],
+            "prefLabel": "Hospitalisation",
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D006760",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "PROC"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 132,
+                "to": 146,
+                "matchType": "PREF",
+                "text": "HOSPITALISATION"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0019993"
+            ],
+            "semanticType": [
+                "T058"
+            ],
+            "prefLabel": "Hospitalisation",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10054112",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "PROC"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 132,
+                "to": 146,
+                "matchType": "PREF",
+                "text": "HOSPITALISATION"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0019993"
+            ],
+            "semanticType": [
+                "T058"
+            ],
+            "prefLabel": "Hospitalisation",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10074101",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "PROC"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 132,
+                "to": 146,
+                "matchType": "PREF",
+                "text": "HOSPITALISATION"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0024779"
+            ],
+            "semanticType": [
+                "T170"
+            ],
+            "prefLabel": "Cartes",
+            "synonym": [
+                "Plan",
+                "Carte",
+                "Plans"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D019532",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "CONC"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 243,
+                "to": 246,
+                "matchType": "SYN",
+                "text": "PLAN"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0015967"
+            ],
+            "semanticType": [
+                "T184"
+            ],
+            "prefLabel": "Fièvre",
+            "synonym": [
+                "Pyrexie",
+                "Hyperthermie"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D005334",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 263,
+                "to": 274,
+                "matchType": "SYN",
+                "text": "HYPERTHERMIE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0015967"
+            ],
+            "semanticType": [
+                "T184"
+            ],
+            "prefLabel": "Hyperthermie",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10020843",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 263,
+                "to": 274,
+                "matchType": "PREF",
+                "text": "HYPERTHERMIE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0751378",
+                "C0746857",
+                "C0027854",
+                "C0521654",
+                "C0751377",
+                "C0235031",
+                "C0422837"
+            ],
+            "semanticType": [
+                "T033",
+                "T184"
+            ],
+            "prefLabel": "Manifestations neurologiques",
+            "synonym": [
+                "Symptômes neurologiques",
+                "Déficit neurologique focal",
+                "Données neurologiques",
+                "Signes et symptômes neurologiques",
+                "Déficits neurologiques focaux",
+                "Signes neurologiques",
+                "Déficits neurologiques",
+                "Déficits neurologiques localisés",
+                "Dysfonctionnement neurologique",
+                "Observations neurologiques",
+                "Constatations neurologiques"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D009461",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 279,
+                "to": 298,
+                "matchType": "SYN",
+                "text": "SIGNES NEUROLOGIQUES"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0235822",
+                "C0235823"
+            ],
+            "semanticType": [
+                "T033"
+            ],
+            "prefLabel": "Surdosage",
+            "@id": "http://chu-rouen.fr/cismef/WHO-ART#0874_IT0",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 322,
+                "to": 330,
+                "matchType": "PREF",
+                "text": "SURDOSAGE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0029944"
+            ],
+            "semanticType": [
+                "T037"
+            ],
+            "prefLabel": "Surdosage",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10033295",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 322,
+                "to": 330,
+                "matchType": "PREF",
+                "text": "SURDOSAGE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0054066",
+                "C0591132",
+                "C0729069",
+                "C0729071",
+                "C0729072",
+                "C0729068"
+            ],
+            "semanticType": [
+                "T109",
+                "T195",
+                "T121"
+            ],
+            "prefLabel": "Association amoxicilline-clavulanate de potassium",
+            "synonym": [
+                "BRL-25000",
+                "Synulox",
+                "Amoxiclavulanate",
+                "Coamoxiclav",
+                "Amoxi-clavulanate",
+                "Amoxycilline-acide clavulanique",
+                "Amox-clav",
+                "Spektramox",
+                "Clavulin",
+                "BRL25000",
+                "Augmentin",
+                "Co-amoxiclav",
+                "Amoxicilline-acide clavulanique"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D019980",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "CHEM"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 335,
+                "to": 343,
+                "matchType": "SYN",
+                "text": "AUGMENTIN"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0035078"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10038435",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 364,
+                "to": 382,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "definition": [
+                "incapacité des reins de filtrer adéquatement le sang des déchets, avec un taux de filtration glomérulaire (tfg) inférieur à la normale. peut être brusque et potentiellement réversible (atteinte rénale aiguë) ou persistant en raison de lésions rénales irréversibles (maladie rénale chronique)."
+            ],
+            "prefLabel": "Insuffisance rénale",
+            "@id": "http://id.who.int/icd/entity/761526554",
+            "@type": "http://www.w3.org/2002/07/owl#Class"
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 364,
+                "to": 382,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C1565489"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10038474",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 364,
+                "to": 382,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C1565489"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10022467",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 364,
+                "to": 382,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0035078"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10023418",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 364,
+                "to": 382,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C1565489",
+                "C0035078"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale",
+            "synonym": [
+                "Insuffisance du rein",
+                "Défaillance rénale",
+                "Défaillance du rein"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D051437",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 364,
+                "to": 382,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "definition": [
+                "les signes de lésions rénales peuvent inclure des anomalies structurales (imagerie ou histologie), une albuminurie au-dessus des limites normales, des anomalies des sédiments urinaires ou des perturbations électrolytiques dues à des troubles tubulaires."
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://id.who.int/icd/entity/412389819",
+            "@type": "http://www.w3.org/2002/07/owl#Class"
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C1561643"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10064848",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0022661"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10038444",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0022661"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10009119",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0403447"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "synonym": [
+                "IRC (Insuffisance Rénale Chronique)"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D051436",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0403447"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10050441",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0022661"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://purl.lirmm.fr/ontology/MDRFRE/10023420",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0549281",
+                "C0041948",
+                "C0302810",
+                "C0235446",
+                "C0022661"
+            ],
+            "semanticType": [
+                "T047"
+            ],
+            "prefLabel": "Insuffisance rénale chronique",
+            "@id": "http://chu-rouen.fr/cismef/WHO-ART#0406_IT0",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "DISO"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 398,
+                "to": 426,
+                "matchType": "PREF",
+                "text": "INSUFFISANCE RÉNALE CHRONIQUE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "prefLabel": "prise en charge",
+            "@id": "http://id.who.int/icd/entity/160164281",
+            "@type": "http://www.w3.org/2002/07/owl#Class"
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 532,
+                "to": 546,
+                "matchType": "PREF",
+                "text": "PRISE EN CHARGE"
+            }
+        ],
+        "mappings": []
+    },
+    {
+        "annotatedClass": {
+            "cui": [
+                "C0043012"
+            ],
+            "semanticType": [
+                "T041"
+            ],
+            "prefLabel": "Vigilance",
+            "synonym": [
+                "État vigile",
+                "État de veille"
+            ],
+            "@id": "http://purl.lirmm.fr/ontology/MSHFRE/D014851",
+            "@type": "http://www.w3.org/2002/07/owl#Class",
+            "semantic_groups": [
+                "PHYS"
+            ]
+        },
+        "hierarchy": [],
+        "annotations": [
+            {
+                "from": 566,
+                "to": 574,
+                "matchType": "PREF",
+                "text": "VIGILANCE"
+            }
+        ],
+        "mappings": []
+    }
+]

@@ -1,0 +1,11 @@
+,filename,from,to,text,id,cui,semantic_groups,semanticType,ontologies
+0,prova,52,68,ÉPISODE DÉPRESSIF,['http://purl.lirmm.fr/ontology/MDRFRE/10012402'],['C0349217'],['DISO'],['T048'],['MDRFRE']
+1,prova,132,146,HOSPITALISATION,"['http://purl.lirmm.fr/ontology/MDRFRE/10074101', 'http://purl.lirmm.fr/ontology/MDRFRE/10054112', 'http://purl.lirmm.fr/ontology/MSHFRE/D006760']",['C0019993'],['PROC'],['T058'],"['MDRFRE', 'MSHFRE']"
+2,prova,243,246,PLAN,['http://purl.lirmm.fr/ontology/MSHFRE/D019532'],['C0024779'],['CONC'],['T170'],['MSHFRE']
+3,prova,263,274,HYPERTHERMIE,"['http://purl.lirmm.fr/ontology/MSHFRE/D005334', 'http://purl.lirmm.fr/ontology/MDRFRE/10020843']",['C0015967'],['DISO'],['T184'],"['MDRFRE', 'MSHFRE']"
+4,prova,279,298,SIGNES NEUROLOGIQUES,['http://purl.lirmm.fr/ontology/MSHFRE/D009461'],"['C0746857', 'C0027854', 'C0751377', 'C0235031', 'C0422837', 'C0751378', 'C0521654']",['DISO'],"['T033', 'T184']",['MSHFRE']
+5,prova,322,330,SURDOSAGE,"['http://purl.lirmm.fr/ontology/MDRFRE/10033295', 'http://chu-rouen.fr/cismef/WHO-ART#0874_IT0']","['C0235823', 'C0029944', 'C0235822']",['DISO'],"['T033', 'T037']","['WHO-ARTFRE', 'MDRFRE']"
+6,prova,335,343,AUGMENTIN,['http://purl.lirmm.fr/ontology/MSHFRE/D019980'],"['C0729068', 'C0729071', 'C0729069', 'C0054066', 'C0591132', 'C0729072']",['CHEM'],"['T195', 'T121', 'T109']",['MSHFRE']
+7,prova,364,382,INSUFFISANCE RÉNALE,"['http://purl.lirmm.fr/ontology/MDRFRE/10038435', 'http://purl.lirmm.fr/ontology/MDRFRE/10023418', 'http://purl.lirmm.fr/ontology/MDRFRE/10022467', 'http://purl.lirmm.fr/ontology/MDRFRE/10038474', 'http://purl.lirmm.fr/ontology/MSHFRE/D051437']","['C1565489', 'C0035078']",['DISO'],['T047'],"['MDRFRE', 'MSHFRE']"
+8,prova,398,426,INSUFFISANCE RÉNALE CHRONIQUE,"['http://purl.lirmm.fr/ontology/MDRFRE/10009119', 'http://purl.lirmm.fr/ontology/MDRFRE/10064848', 'http://purl.lirmm.fr/ontology/MDRFRE/10050441', 'http://purl.lirmm.fr/ontology/MDRFRE/10023420', 'http://chu-rouen.fr/cismef/WHO-ART#0406_IT0', 'http://purl.lirmm.fr/ontology/MDRFRE/10038444', 'http://purl.lirmm.fr/ontology/MSHFRE/D051436']","['C0235446', 'C0041948', 'C0549281', 'C0403447', 'C0022661', 'C1561643', 'C0302810']",['DISO'],['T047'],"['WHO-ARTFRE', 'MDRFRE', 'MSHFRE']"
+9,prova,566,574,VIGILANCE,['http://purl.lirmm.fr/ontology/MSHFRE/D014851'],['C0043012'],['PHYS'],['T041'],['MSHFRE']
