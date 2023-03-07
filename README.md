@@ -18,7 +18,7 @@ Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set 
 ```
  python -m spacy benchmark accuracy model_path test_data_path --gpu-id 0
 ```
-[data.py](data.py) contains train and test data.<br/>
+[data](data) contains train and test data.<br/>
 [cv](cv) and [cv_alt](cv_alt) contain data folds created for the cross-validation process, specifically for models able to label DRUG and SYM and DRUG, ADR and NLD.<br/>
 [configs](configs) contains spaCy config files, specifically [config_3.cfg](configs/config_3.cfg) for the pipeline which labels DRUG, ADR and NLD, and [config_4.cfg](configs/config_4.cfg) for the one which labels DRUG and SYM.<br/>
 [dict.py](dict.py) generate a pattern file containing patterns for the Entity Ruler component. Not that pattern files are already provided: [pattern.jsonl](pattern.jsonl) contains DRUG patterns, while [pattern_2.jsonl](pattern_2.jsonl) contains DRUG and SYM patterns. <br/>
