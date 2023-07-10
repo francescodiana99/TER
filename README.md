@@ -1,8 +1,7 @@
 # Entities Annotation from Electronic Health Records
 
 ## Project Description
-TER Code
-
+Named Entity Recognition project, the model provided allows to extract names of DRUGS, SYMPTOMS and ADVERSAL DRUG REACTIONS from French Health Records
 ## How to Install Dependencies
 To install dependencies, run:
 
