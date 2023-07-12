@@ -9,7 +9,7 @@ To install dependencies, run:
 pip install -r requirements.txt
 ```
 Note that to be able to correctly install pytesseract you should follow [this guide](https://pypi.org/project/pytesseract/), but processed text is already available in [test.txt](data/test.txt). In addition, to use SpaCy "transformer" component, you need to have a compatible version of CUDA library installed. Please, refer to SpaCy installation [guide](https://spacy.io/usage/embeddings-transformers#transformers) for more information.
-Moreover, to perform hyperparameter tuning, it is needed a WanB account. To set up a WandB environment, refer to [here](https://docs.wandb.ai/guides/integrations/spacy).
+Moreover, to perform hyperparameter tuning, it is needed a WandB account. To set up a WandB environment, refer to [here](https://docs.wandb.ai/guides/integrations/spacy).
 
 ## Project structure
 [cross_validation.py](cross_validation.py) and [cross_validation_alt.py](cross_validation_alt.py) run a cross-validation process followed by an evaluation process respectively on pipelines able to label DRUG and SYM and DRUG, ADR and NLD.<br/>
